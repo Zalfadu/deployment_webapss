@@ -3,7 +3,7 @@ st.sidebar.title('Menu')
 with st.sidebar:
         option = st.radio('Pilih salah satu:',['Pendahuluan','KALKON','KANGEN','Deteksi Bahaya Paparan Bahan Kimia'])
 if option == "Pendahuluan": 
-    st.image("https://i.pinimg.com/originals/c9/ff/af/c9ffaff3f15bd19379a360edb33080d5.gif")
+    st.image("https://i.pinimg.com/originals/6d/32/d9/6d32d95c7f04f8870a4980bd538bc3e4.gif")
     st.header(':blue[Website Perhitungan Konsentrasi dan Deteksi Bahaya Paparan Bahan Kimia Oleh Kelompok 7]')
     st.write("Dwi Herawati (2219066)")
     st.write("Ghina Salma (2219075)")
