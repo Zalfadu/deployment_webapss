@@ -3,7 +3,7 @@ import streamlit as st
 #Memunculkan tampilan samping
 st.sidebar.title('Menu')
 with st.sidebar:
-        option = st.radio('Pilih salah satu:',['INTRO','KALKON','KANGEN','DEBARAN'])
+        option = st.radio('Pilih salah satu:',['INTRO','KALKON','KANGEN','DEBARAN','CLOSING'])
 #Memunculkan halaman awal
 if option == "INTRO": 
     st.markdown("<h1 style='text-align: center; color: blue;'>CHEMISTRY SPACE🌌</h1>", unsafe_allow_html=True)
@@ -162,5 +162,14 @@ if option == "DEBARAN":
            st.write("TIDAK AMAN😩")
         elif hasil <=ppm1:
            st.write("AMAN😍")
-
+#Memunculkan judul 4
+if option == "CLOSING": 
+    st.markdown("<h1 style='text-align: center; color: blue;'>About The Programmer👩‍💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; color: black;'>Oleh Kelompok 7</h4>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: center; color: black;'>Dwi Herawati (2219066)</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: center; color: black;'>Ghina Salma (2219075)</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: center; color: black;'>Tiara Purnama Putri (2219176)</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: center; color: black;'>Uray Tya Keshia Maharani (2219177)</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: center; color: black;'>Zalfa Dhiya Ulhaq (2219186)</h5>", unsafe_allow_html=True)
+   
 
