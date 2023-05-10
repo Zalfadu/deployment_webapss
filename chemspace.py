@@ -1,19 +1,22 @@
 import streamlit as st
+
+#Memunculkan tampilan samping
 st.sidebar.title('Menu')
 with st.sidebar:
         option = st.radio('Pilih salah satu:',['INTRO','KALKON','KANGEN','DEBARAN'])
+#Memunculkan halaman awal
 if option == "INTRO": 
     st.image("https://i.pinimg.com/originals/6d/32/d9/6d32d95c7f04f8870a4980bd538bc3e4.gif")
     st.header(':blue[CHEMISTRY SPACE🌌]')
     st.write('*Website khusus perhitungan untuk bidang Analisis Kimia dan terapannya*')
     st.write('Dikembangkan oleh Kelompok 7 ACETYLCHOLINE')
-
+#Memunculkan judul 1
 if option == "KALKON":
     st.header(':red[Welcome to KALKON!] 🤭')
     st.subheader('Kalkulator Konsentrasi')
     #Input slide
     progress_text = "Operation in progress. Please wait."
-
+#Perhitungan judul 1
     #Khusus titrimetri
     st.write(":blue[*Perhitungan Konsentrasi Titran Khusus Titrimetri*]")
     #Input volume khusus titrimetri
@@ -35,8 +38,7 @@ if option == "KALKON":
         Molaritas = number2/(number1*number3*number4)
         st.success(f'Molaritas adalah {Molaritas}M')
     else:
-        st.write('Silahkan tekan tombol hitung😊')
-        
+        st.write('Silahkan tekan tombol hitung😊')       
     #Khusus Kadar b/v atau b/b
     st.write(':blue[*Perhitungan Konsentrasi Kadar Sampel %(b/b), %(b/v), atau ppm Khusus Titrimetri*]')
     #Input Normalitas Titran
@@ -65,17 +67,17 @@ if option == "KALKON":
     #Input Persen 
     number22 = 100 
     if st.button('Hitung Kadar % (b/v)'):
-        Kadar = number15*number16*number19*number20*number21*number22/number17
+        Kadar = number15*number16*number19*number20*number22/number17
         st.success(f'Kadar sebesar {Kadar}%(b/v)')
     if st.button('Hitung Kadar % (b/b)'):
-        Kadar = number15*number16*number19*number20*number21*number22/number18
+        Kadar = number15*number16*number19*number20*number22/number18
         st.success(f'Kadar sebesar {Kadar}%(b/b)')   
     if st.button('Hitung PPM'):
         ppm = number15*number16*number19/number17
         st.success(f'ppm sebesar {ppm}ppm')
     else:
         st.write('Silahkan tekan tombol hitung😊')
-        
+#Memunculkan judul 2        
 if option == "KANGEN":
     #Write
     st.header(':orange[This is KANGEN!]🥰')
@@ -98,7 +100,7 @@ if option == "KANGEN":
         st.success(f'Volumenya sebesar {Volume}')
     else :
         st.write ('Silahkan tekan tombol hitung 😊')
-
+#Memunculkan judul 3
 if option == "DEBARAN": 
     #Write
     st.header(':green[Deteksi Bahaya Paparan Bahan Kimia]🧪')
