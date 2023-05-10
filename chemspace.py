@@ -6,10 +6,36 @@ with st.sidebar:
         option = st.radio('Pilih salah satu:',['INTRO','KALKON','KANGEN','DEBARAN'])
 #Memunculkan halaman awal
 if option == "INTRO": 
+    st.markdown("<h1 style='text-align: center; color: blue;'>CHEMISTRY SPACE🌌</h1>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; color: black;'>Website khusus perhitungan untuk bidang Analisis Kimia dan terapannya</h4>", unsafe_allow_html=True)
     st.image("https://i.pinimg.com/originals/6d/32/d9/6d32d95c7f04f8870a4980bd538bc3e4.gif")
-    st.header(':blue[CHEMISTRY SPACE🌌]')
-    st.write('*Website khusus perhitungan untuk bidang Analisis Kimia dan terapannya*')
-    st.write('Dikembangkan oleh Kelompok 7 ACETYLCHOLINE')
+    #Memunculkan 3 menu 
+    col1, col2, col3 = st.columns(3)
+    with col1:
+       st.header("KALKON")
+       st.markdown(
+        """
+        KALKON merupakan singkatan Kalkulator Konsentrasi, dimana menu ini dapat membantu menghitung konsentrasi hasil standarisasi bahan baku sekunder dan penetapan kadar analit dalam sampel dengan metode TITRIMETRI
+    """
+    )
+
+
+    with col2:
+       st.header("KANGEN")
+       st.markdown(
+        """
+        KANGEN merupakan singkatan Kalkulator Pengenceran, menu ini dapat membantu menghitung volume dan konsentrasi sebelum maupun sesudah proses pengenceran
+    """
+    )
+
+
+    with col3:
+       st.header("DEBARAN")
+       st.markdown(
+        """
+        DEBARAN merupakan singkatan Deteksi Bahaya Paparan  bahan kimia yang berbahaya, dimana menu ini dapat mendeteksi tingkat aman bekerja dengan berbagai bahan kimia sesuai dengan Nilai Batas Ambang (TLV-TWA dan TLV-C). Selain itu dapat juga menghitung seberapa besar konsentrasi bahan kimia yang terpapar oleh pekerja selama satu hari bekerja
+    """
+    )
 #Memunculkan judul 1
 if option == "KALKON":
     st.header(':red[Welcome to KALKON!] 🤭')
